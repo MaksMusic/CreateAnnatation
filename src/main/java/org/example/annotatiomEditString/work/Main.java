@@ -1,11 +1,8 @@
-package org.example;
+package org.example.annotatiomEditString.work;
 
 
-import org.example.annotatiomEditString.User;
+import org.example.annotatiomEditString.model.User;
 import org.example.annotatiomEditString.work.UserServicesImpl;
-
-import java.lang.reflect.Field;
-import java.nio.file.Files;
 
 public class Main {
 

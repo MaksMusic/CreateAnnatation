@@ -1,4 +1,6 @@
-package org.example.annotatiomEditString;
+package org.example.annotatiomEditString.model;
+
+import org.example.annotatiomEditString.annatation.RemoveSpaces;
 
 import java.util.Objects;
 
