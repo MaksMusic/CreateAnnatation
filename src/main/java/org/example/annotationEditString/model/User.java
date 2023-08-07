@@ -1,13 +1,13 @@
-package org.example.annotatiomEditString.model;
+package org.example.annotationEditString.model;
 
-import org.example.annotatiomEditString.annatation.RemoveSpaces;
+import org.example.annotationEditString.annatation.RemoveSpaces;
 
 import java.util.Objects;
 
 public class User {
-    @RemoveSpaces
+    @RemoveSpaces(sim = '-')// annotation with parameter
     private String login;
-    @RemoveSpaces
+    @RemoveSpaces // annotation without parameter
     private String password;
     @RemoveSpaces
     private int age;
@@ -20,9 +20,8 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "login='" + login + '\'' +
-                ", password='" + password + '\'' +
+        return "User{" + login +
+                ","+password +
                 ", age=" + age +
                 '}';
     }

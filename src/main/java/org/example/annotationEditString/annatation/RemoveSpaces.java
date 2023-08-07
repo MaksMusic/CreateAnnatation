@@ -1,4 +1,4 @@
-package org.example.annotatiomEditString.annatation;
+package org.example.annotationEditString.annatation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 
-@Target(ElementType.FIELD) //аннатация применяется только к свойствам
+@Target(ElementType.FIELD) //Р°РЅРЅРѕС‚Р°С†РёСЏ РїСЂРёРјРµРЅСЏРµС‚СЃСЏ С‚РѕР»СЊРєРѕ Рє СЃРІРѕР№СЃС‚РІР°Рј
 @Retention(RetentionPolicy.RUNTIME)
 
 public @interface RemoveSpaces {

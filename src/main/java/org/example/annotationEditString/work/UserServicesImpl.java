@@ -1,6 +1,6 @@
-package org.example.annotatiomEditString.work;
+package org.example.annotationEditString.work;
 
-import org.example.annotatiomEditString.annatation.RemoveSpaces;
+import org.example.annotationEditString.annatation.RemoveSpaces;
 import java.lang.reflect.Field;
 
 public class UserServicesImpl {
@@ -11,16 +11,16 @@ public class UserServicesImpl {
     }
 
     public void processing() throws IllegalAccessException {
-        //получаем поля объекта
+        //РїРѕР»СѓС‡Р°РµРј РїРѕР»СЏ РѕР±СЉРµРєС‚Р°
         Field[] fields = object.getClass().getDeclaredFields();
         for (Field field : fields) {
-            //проверяем стоит ли над полем аннотация RemoveSpaces и является ли поле String
+            //РїСЂРѕРІРµСЂСЏРµРј СЃС‚РѕРёС‚ Р»Рё РЅР°Рґ РїРѕР»РµРј Р°РЅРЅРѕС‚Р°С†РёСЏ RemoveSpaces Рё СЏРІР»СЏРµС‚СЃСЏ Р»Рё РїРѕР»Рµ String
             if (field.isAnnotationPresent(RemoveSpaces.class) & field.getType().getName().equals("java.lang.String")) {
-                //получаем символ из аннотации из метода sim
+                //РїРѕР»СѓС‡Р°РµРј СЃРёРјРІРѕР» РёР· Р°РЅРЅРѕС‚Р°С†РёРё РёР· РјРµС‚РѕРґР° sim
                 char ch = field.getAnnotation(RemoveSpaces.class).sim();
-                //открывает доступ для редактирования поля
+                //РѕС‚РєСЂС‹РІР°РµС‚ РґРѕСЃС‚СѓРї РґР»СЏ СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёСЏ РїРѕР»СЏ
                 field.setAccessible(true);
-                //редактируем поле указывая у какого объекта и новое значение
+                //СЂРµРґР°РєС‚РёСЂСѓРµРј РїРѕР»Рµ СѓРєР°Р·С‹РІР°СЏ Сѓ РєР°РєРѕРіРѕ РѕР±СЉРµРєС‚Р° Рё РЅРѕРІРѕРµ Р·РЅР°С‡РµРЅРёРµ
                 field.set(object, field.get(object).toString().replace(' ',ch));
             }
 
