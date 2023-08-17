@@ -1,6 +1,9 @@
 package org.example.annotationAbsolutNum.annotation;
 
-import java.lang.annotation.*;
+import java.lang.annotation.Documented;
+import java.lang.annotation.Inherited;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 
 @Documented// в документации javaDoc
 @Inherited // данная аннотации будет унаследована потомками класса
@@ -19,5 +22,5 @@ import java.lang.annotation.*;
 //@Retention(RetentionPolicy.SOURCE) // только в исходном коде используется в основном для документации
 //@Retention(RetentionPolicy.CLASS) // видно только во время компиляции
 public @interface AbsolutNum {
-    int num () default 1;
+    int num () default 0;
 }

@@ -1,6 +1,10 @@
 package org.example.annotationAbsolutNum.model;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import org.example.annotationAbsolutNum.annotation.AbsolutNum;
 
 
 @Data
@@ -8,6 +12,7 @@ import lombok.*;
 
 public class Person {
     private String name;
+    @AbsolutNum
     private int age;
     private double balance;
     private float ball;
@@ -17,6 +22,16 @@ public class Person {
         this.age = age;
         this.balance = balance;
         this.ball = ball;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", balance=" + balance +
+                ", ball=" + ball +
+                '}';
     }
 }
 
