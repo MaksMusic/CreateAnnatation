@@ -1,7 +1,7 @@
-package org.example.annotationEditString.work;
+package org.example.MyAnnotationEditString.work;
 
 
-import org.example.annotationEditString.model.User;
+import org.example.MyAnnotationEditString.model.User;
 
 public class Main {
 

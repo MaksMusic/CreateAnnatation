@@ -1,13 +1,9 @@
-package org.example.annotationEditString.model;
+package org.example.MyAnnotationEditString.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
-import org.example.annotationEditString.annatation.RemoveSpaces;
-
-import java.util.Objects;
-
+import org.example.MyAnnotationEditString.annatation.RemoveSpaces;
 
 
 @Data

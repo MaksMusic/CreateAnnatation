@@ -1,6 +1,6 @@
-package org.example.annotationAbsolutNum.work;
+package org.example.MyAnnotationAbsolutNum.work;
 
-import org.example.annotationAbsolutNum.model.Person;
+import org.example.MyAnnotationAbsolutNum.model.Person;
 
 public class Main {
     public static void main(String[] args) throws IllegalAccessException {

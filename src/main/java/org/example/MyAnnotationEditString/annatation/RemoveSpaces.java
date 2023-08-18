@@ -1,4 +1,4 @@
-package org.example.annotationEditString.annatation;
+package org.example.MyAnnotationEditString.annatation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

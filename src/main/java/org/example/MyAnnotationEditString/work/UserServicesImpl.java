@@ -1,6 +1,6 @@
-package org.example.annotationEditString.work;
+package org.example.MyAnnotationEditString.work;
 
-import org.example.annotationEditString.annatation.RemoveSpaces;
+import org.example.MyAnnotationEditString.annatation.RemoveSpaces;
 
 import java.lang.reflect.Field;
 

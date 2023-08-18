@@ -1,10 +1,8 @@
-package org.example.annotationAbsolutNum.model;
+package org.example.MyAnnotationAbsolutNum.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.example.annotationAbsolutNum.annotation.AbsolutNum;
+import org.example.MyAnnotationAbsolutNum.annotation.AbsolutNum;
 
 
 @Data

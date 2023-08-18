@@ -1,4 +1,4 @@
-package org.example.annotationAbsolutNum.test;
+package org.example.MyAnnotationAbsolutNum.test;
 
 public class TestNameInt {
     public static void main(String[] args) {

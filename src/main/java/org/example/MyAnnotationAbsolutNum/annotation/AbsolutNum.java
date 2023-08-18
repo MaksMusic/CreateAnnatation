@@ -1,4 +1,4 @@
-package org.example.annotationAbsolutNum.annotation;
+package org.example.MyAnnotationAbsolutNum.annotation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.Inherited;

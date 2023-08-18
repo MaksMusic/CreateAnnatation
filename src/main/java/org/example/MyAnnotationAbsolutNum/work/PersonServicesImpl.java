@@ -1,6 +1,6 @@
-package org.example.annotationAbsolutNum.work;
+package org.example.MyAnnotationAbsolutNum.work;
 
-import org.example.annotationAbsolutNum.annotation.AbsolutNum;
+import org.example.MyAnnotationAbsolutNum.annotation.AbsolutNum;
 
 import java.lang.reflect.Field;
 
